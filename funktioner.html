@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React – Funktioner</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>React – Funktioner</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="funktioner.html">Funktioner</a></li>
+          <li><a href="fordelar.html">Fördelar</a></li>
+          <li><a href="komigang.html">Kom igång</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>React – Funktioner</h2>
+      <p>
+        React är ett mycket kraftfullt bibliotek tack vare dess innovativa
+        funktioner som är utformade för att förenkla utvecklingen av dynamiska
+        och återanvändbara användargränssnitt. Nedan går vi igenom de viktigaste
+        funktionerna som gör React så effektivt och populärt.
+      </p>
+
+      <h3>JSX (JavaScript XML)</h3>
+      <p>
+        JSX är en syntaxförlängning till JavaScript som låter dig skriva
+        HTML-liknande kod direkt i dina JavaScript-filer. Det är en av de mest
+        uppskattade funktionerna i React eftersom det gör koden lättare att
+        förstå och mer strukturerad.
+      </p>
+      <p>Exempel:</p>
+      <pre><code>const element = &lt;h1&gt;Hej världen!&lt;/h1&gt;;</code></pre>
+      <p>
+        JSX sammanställs i bakgrunden till vanlig JavaScript som anropar
+        funktioner som <code>React.createElement</code>. Du kan även använda
+        JavaScript-logik inuti JSX med hjälp av måsvingar <code>{ }</code>.
+      </p>
+
+      <h3>Komponentbaserad arkitektur</h3>
+      <p>
+        I React bygger du hela användargränssnittet av komponenter. Varje
+        komponent kan representera ett element (som en knapp), ett block (som en
+        produktkort), eller hela sidor. Komponenter kan återanvändas och
+        kombineras för att skapa större strukturer.
+      </p>
+      <p>
+        Det finns två typer av komponenter:
+        <strong>funktionella komponenter</strong> och
+        <strong>klasskomponenter</strong>. Med React Hooks har funktionella
+        komponenter blivit standarden, eftersom de är enklare att skriva och
+        testa.
+      </p>
+
+      <h3>Virtual DOM</h3>
+      <p>
+        En av de största innovationerna i React är dess Virtual DOM. Istället
+        för att uppdatera hela webbsidans struktur (DOM) varje gång något
+        ändras, skapar React en kopia av DOM-trädet i minnet. När tillståndet
+        ändras jämförs den nya Virtual DOM med den tidigare (diffing), och
+        endast de ändringar som krävs görs i den verkliga DOM:en.
+      </p>
+      <p>
+        Detta förbättrar prestandan dramatiskt och minskar mängden omritningar i
+        webbläsaren – vilket gör React snabbare än traditionell
+        DOM-manipulation.
+      </p>
+
+      <h3>React Hooks</h3>
+      <p>
+        Hooks introducerades i React version 16.8 och revolutionerade hur
+        utvecklare bygger logik i komponenter. Hooks tillåter dig att använda
+        tillstånd (<code>useState</code>), effekter (<code>useEffect</code>) och
+        mycket mer i funktionella komponenter.
+      </p>
+      <p>Exempel på en Hook:</p>
+      <pre><code>
+import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;Du klickade {count} gånger&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;Klicka här&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+      <p>
+        Det finns också avancerade Hooks som <code>useReducer</code>,
+        <code>useContext</code>, <code>useMemo</code> och
+        <code>useCallback</code> – alla hjälper dig att strukturera och optimera
+        din kod.
+      </p>
+
+      <h3>Unidirectional Data Flow</h3>
+      <p>
+        React använder ett enkelriktat dataflöde – från förälder till barn. Det
+        innebär att data skickas genom komponenthierarkin via "props", vilket
+        gör det enkelt att förstå och förutsäga hur datan rör sig i
+        applikationen. När en komponent behöver uppdatera något i sin förälder
+        skickar den tillbaka data via en callback-funktion.
+      </p>
+
+      <h3>Ekosystem och integration</h3>
+      <p>
+        React har ett stort ekosystem med verktyg och bibliotek som förstärker
+        funktionaliteten:
+      </p>
+      <ul>
+        <li>
+          <strong>React Router</strong> – för navigering mellan olika
+          sidor/komponenter
+        </li>
+        <li><strong>Redux</strong> – för global tillståndshantering</li>
+        <li><strong>Next.js</strong> – för server-side rendering och SEO</li>
+        <li>
+          <strong>Styled Components</strong> – för att skriva CSS i JavaScript
+        </li>
+      </ul>
+
+      <p>
+        Tillsammans med dessa funktioner gör React det möjligt att bygga
+        kraftfulla, flexibla och moderna webbapplikationer som är lätta att
+        underhålla och vidareutveckla.
+      </p>
+
+      <img src="/bildreact.jpg" />
+    </main>
+    <footer>
+      <p>&copy; 2025 React Info Site. Alla rättigheter förbehållna.</p>
+    </footer>
+  </body>
+</html>

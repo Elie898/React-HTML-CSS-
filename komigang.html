@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kom igång med React</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kom igång med React</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="funktioner.html">Funktioner</a></li>
+          <li><a href="fordelar.html">Fördelar</a></li>
+          <li><a href="komigang.html">Kom igång</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Hur kommer man igång med React?</h2>
+      <p>
+        Att komma igång med React är enklare än det låter. React har ett
+        utvecklarvänligt ekosystem med verktyg och färdiga mallar som gör det
+        lätt att skapa professionella webbapplikationer – även som nybörjare.
+        Här är en steg-för-steg-guide för hur du sätter upp ett React-projekt
+        från grunden.
+      </p>
+
+      <h3>Steg 1: Installera Node.js och npm</h3>
+      <p>
+        React körs i en JavaScript-miljö som kräver Node.js och npm (Node
+        Package Manager). Node.js är en JavaScript-motor som gör det möjligt att
+        köra JavaScript utanför webbläsaren – exempelvis i terminalen eller
+        servermiljöer.
+      </p>
+      <p>
+        Gå till <a href="https://nodejs.org" target="_blank">nodejs.org</a> och
+        ladda ner den senaste LTS-versionen (Long-Term Support). När
+        installationen är klar får du automatiskt tillgång till kommandot
+        <code>npm</code>, vilket används för att installera paket.
+      </p>
+
+      <h3>Steg 2: Skapa ett nytt projekt med Create React App</h3>
+      <p>
+        Det enklaste sättet att starta ett React-projekt är med verktyget Create
+        React App (CRA). Det skapar en färdig projektstruktur åt dig med alla
+        konfigurationer redan på plats – så du kan börja koda direkt utan att
+        tänka på webpack eller babel-inställningar.
+      </p>
+      <p>Öppna terminalen och kör:</p>
+      <pre><code>npx create-react-app mitt-projekt</code></pre>
+      <p>
+        Detta laddar ner och genererar en mapp med alla filer du behöver. Du kan
+        byta ut <code>mitt-projekt</code> till valfritt namn på din applikation.
+      </p>
+
+      <h3>Steg 3: Starta utvecklingsservern</h3>
+      <p>
+        För att starta din nya applikation, navigera in i projektmappen och kör:
+      </p>
+      <pre><code>cd mitt-projekt
+npm start</code></pre>
+      <p>
+        Efter några sekunder öppnas en webbläsare automatiskt med din nya
+        React-app som körs på <code>http://localhost:3000</code>. Detta är din
+        lokala utvecklingsserver som uppdateras i realtid när du sparar
+        ändringar i koden.
+      </p>
+
+      <h3>Steg 4: Redigera din första komponent</h3>
+      <p>
+        I mappen <code>src</code> hittar du filen <code>App.js</code>. Det är
+        här du börjar skriva din egen React-kod. Testa att byta ut texten inuti
+        <code>&lt;header&gt;</code> mot något annat – spara filen, och se
+        resultatet uppdateras automatiskt i webbläsaren tack vare hot reloading.
+      </p>
+
+      <h3>Bonus: Utforska mappstrukturen</h3>
+      <ul>
+        <li><code>public/</code> – innehåller statiska filer som index.html</li>
+        <li><code>src/</code> – här skriver du all din JavaScript/React-kod</li>
+        <li><code>node_modules/</code> – alla installerade beroenden</li>
+        <li>
+          <code>package.json</code> – lista över projektets beroenden och skript
+        </li>
+      </ul>
+
+      <h3>Tips för nybörjare</h3>
+      <ul>
+        <li>
+          Du kan installera nya bibliotek med
+          <code>npm install bibliotek-namn</code>
+        </li>
+        <li>
+          Du kan skapa egna komponenter i egna filer och importera dem i
+          <code>App.js</code>
+        </li>
+        <li>
+          Använd React DevTools i webbläsaren för att inspektera komponenter och
+          tillstånd
+        </li>
+      </ul>
+
+      <p>
+        Nu är du igång med React! Fortsätt att utforska funktioner som
+        <strong>state</strong>, <strong>props</strong>,
+        <strong>events</strong> och <strong>hooks</strong> för att bygga
+        interaktiva och kraftfulla applikationer.
+      </p>
+
+      <img src="react.jpg" />
+    </main>
+    <footer>
+      <p>&copy; 2025 React Info Site. Alla rättigheter förbehållna.</p>
+    </footer>
+  </body>
+</html>
